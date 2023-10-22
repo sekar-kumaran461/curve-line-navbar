@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smart agri</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="base.css">
+  <script>
+    $(function () {
+      $("li").click(function (e) {
+        e.preventDefault();
+        $("li").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <nav class="navbar" >
+
+    <a class="navbar-brand" href="#" style="margin-top: -25px;margin-bottom: 50px;margin-right: 50px;">
+      <img src="logo/smart-agri.jpg" width='100' height='100' />
+    </a>
+
+    <ul>
+
+      <li class="list-item">
+        <b class="left-curve"></b>
+        <b class="right-curve"></b>
+        <a class="menu">
+          Home
+        </a>
+      </li>
+      <li class="list-item">
+        <b class="left-curve"></b>
+        <b class="right-curve"></b>
+        <a class="menu">
+          Services
+        </a>
+      </li>
+      <li class="list-item">
+        <b class="left-curve"></b>
+        <b class="right-curve"></b>
+        <a class="menu">
+          About Us
+        </a>
+      </li>
+      <li class="list-item active">
+        <b class="left-curve"></b>
+        <b class="right-curve"></b>
+        <a class="menu">
+          Profile
+        </a>
+      </li>
+      <div class="search">
+ 
+        <form action="#">
+            <input type="text"
+                   placeholder=" Search Services"
+                   name="search">
+            <button>
+              <!--<i class="search"
+                style="font-size: 18px;" >
+                </i>-->
+                <h1> <span class="searchbutton">&#x1F50D</span></h1>
+                
+            </button>
+        </form>
+    </div>
+      
+       
+    
+    </ul>
+   
+
+
+  </nav>
+</body>
+
+</html>

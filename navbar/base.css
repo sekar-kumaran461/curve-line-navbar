@@ -1,0 +1,151 @@
+.navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 10px;
+    width: 100%;
+    background-image:url('logo/agri.jpg');
+    height:min-content;
+    bottom: 50px;
+}
+
+.navbar ul {
+    display: static;
+    list-style-type: none;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+    margin-inline-start: 150px;
+    margin-inline-end: 0px;
+    padding-inline-start: 100px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.navbar ul li {
+    display: inline;
+    list-style: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: large;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+
+.navbar ul li.active {
+    background: aquamarine;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li.active a {
+    color:red;
+}
+
+/* The Pseudo elements : Style
+for the outside curve */
+
+
+.navbar ul li b.left-curve {
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    height: auto;
+    width: 20px;
+    background: lightseagreen;
+    display: none;
+}
+
+.navbar ul li b.left-curve::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: auto;
+    background: lightseagreen;
+}
+
+.navbar ul li b.right-curve {
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    height: auto;
+    width: 20px;
+    background: lightseagreen;
+    display: none;
+}
+body{
+    background-color: aquamarine;
+
+}
+
+.navbar ul li b.right-curve::before {
+    content: "";
+    right: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: auto;
+    border-bottom-left-radius: auto;
+    background: lightseagreen;
+}
+
+.navbar ul li.active b.left-curve,
+.navbar ul li.active b.right-curve {
+    display: block;
+}
+
+.menu{
+    font-size:large;
+    padding : 0px;
+    justify-content: center;
+    position: relative;
+    
+}
+.navbar-brand{
+    padding: 50px;
+    padding-top: 60px;
+    padding-bottom:0px;
+    border: 20px;
+    border-width: 50px;
+    position:static;
+    margin-top: -25px;
+}
+
+ /* styling search bar */
+ .search input[type=text]{
+    width:300px;
+    height:25px;
+    border-radius:25px;
+    border: none;
+ 
+}
+ 
+.search{
+    float:right;
+    margin:2px;
+    margin-top: -35px;
+    padding: 10px;
+
+    
+ 
+}
+ 
+.search button{
+    
+    padding-right: 20px;
+    float: right;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    
+    margin-top: -20px;
+    
+    cursor: pointer;
+}
